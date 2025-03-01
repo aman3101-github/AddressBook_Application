@@ -9,7 +9,7 @@ public class AddressBookController {
 
     // GET Method to fetch all records
     @GetMapping("/fetch")
-    public ResponseEntity<String> fetchAllRecords() {
+    public ResponseEntity<String> fetchAllRecords(@RequestBody AddressDTO addressDTO) {
         return ResponseEntity.ok("GET request received: Fetching all addresses.");
     }
 
