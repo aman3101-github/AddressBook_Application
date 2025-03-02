@@ -1,8 +1,13 @@
 package com.example.AddressBook_Application;
 
+import lombok.Getter;
+import lombok.Setter;
 
+@Setter
+@Getter
 public class AddressDTO {
 
+    // Getters and setters
     // Encapsulated Attributes of the DTO
     private String name;
     private String city;
@@ -16,33 +21,6 @@ public class AddressDTO {
         this.name = name;
         this.city = city;
         this.state = state;
-        this.zipcode = zipcode;
-    }
-
-    // Getters and setters
-    public String getName(){
-        return name;
-    }
-    public String getCity(){
-        return city;
-    }
-    public String getState(){
-        return state;
-    }
-    public String getZipcode(){
-        return zipcode;
-    }
-
-    public void setName(String name){
-        this.name = name;
-    }
-    public void setCity(String city){
-        this.city = city;
-    }
-    public void setState(String state){
-        this.state = state;
-    }
-    public void setZipcode(String zipcode){
         this.zipcode = zipcode;
     }
 
