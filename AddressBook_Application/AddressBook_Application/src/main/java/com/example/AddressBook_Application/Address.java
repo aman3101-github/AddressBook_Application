@@ -8,17 +8,19 @@ public class Address {
     // Encapsulated Attributes of the model
     private int id;
     private String name;
-    private String colony;
     private String city;
+    private String state;
+    private String zipcode;
 
     // Constructors of the class
     public Address() {}
 
-    public Address(int id, String name, String colony, String city){
+    public Address(int id, String name, String city, String state, String zipcode){
         this.id = id;
         this.name = name;
-        this.colony = colony;
         this.city = city;
+        this.state = state;
+        this.zipcode = zipcode;
     }
 
     // getters method
@@ -31,8 +33,11 @@ public class Address {
     public String getCity(){
         return city;
     }
-    public String getColony(){
-        return colony;
+    public String getState(){
+        return state;
+    }
+    public String getZipcode(){
+        return zipcode;
     }
 
     // Setters method
@@ -42,11 +47,14 @@ public class Address {
     public void setName(String name){
         this.name = name;
     }
-    public void setColony(String colony){
-        this.colony = colony;
-
-    }
     public void setCity(String city){
         this.city = city;
     }
+    public void setState(String state){
+        this.state = state;
+    }
+    public void setZipcode(String zipcode){
+        this.zipcode = zipcode;
+    }
+
 }
